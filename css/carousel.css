@@ -1,0 +1,67 @@
+.wrapper-testi {
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper-testi i {
+    top: 50%;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 46px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.wrapper-testi i:first-child {
+    left: -3px;
+}
+
+.wrapper-testi i:last-child {
+    right: -3px;
+}
+
+.wrapper-testi .carousel-testi {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel-testi.dragging {
+    cursor: grab;
+    scroll-behavior: smooth;
+}
+
+.carousel-testi.dragging img {
+    pointer-events: none;
+}
+
+.carousel-testi img {
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100%/3);
+    box-shadow: 0 .225rem .35rem rgba(0, 0, 0, .075);
+}
+
+.carousel-testi img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 1200px){
+    .carousel-testi img {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .carousel-testi img {
+        width: 100%;
+    }
+}
